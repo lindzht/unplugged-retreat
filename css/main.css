@@ -207,7 +207,7 @@ textarea {
   }
 
   aside .content-wrapper {
-
+    
   }
 
   aside .form-description {
@@ -431,7 +431,7 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*Tablet styles here*/
+/*-------- Tablet Styles ---------*/
 
   /* General styles */
   .content-wrapper {
@@ -569,11 +569,67 @@ textarea {
 
 }
 
-
-
-
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+/*-------- Desktop Styles ---------*/
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+
+  .hero-area h1 {
+    width: 56%;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 28%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 72%;
+  }
+
+  .features article {
+    flex-basis: 30%;
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 80%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+   .mission h2,
+   .contact-section .content-wrapper h2 {
+       width: 78%;
+   }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+   .faq h2 {
+       width: 100%;
+   }
+
+
+
+
+
+
+
 }
 
 /* ==========================================================================
