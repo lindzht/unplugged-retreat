@@ -100,14 +100,15 @@ textarea {
   /* Header Styles */
 
   header {
-
+    padding: 15px 0;
   }
 
   header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap
+    flex-flow: row wrap;
+    margin: 0;
 
 
   }
@@ -117,7 +118,7 @@ textarea {
   }
 
   .header-divider {
-
+    width: 100%;
   }
 
   header nav {
@@ -125,21 +126,33 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
   }
 
   header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 44%;
   }
 
   /* Footer Styles */
 
   footer {
-    
+    display: flex;
+    flex-flow: column wrap;
   }
 
   footer .content-wrapper {
-    
+    width: 55%;
+    margin: 50px 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer h3{
+    margin: 38px 0;
   }
 
   footer .contact {
@@ -154,6 +167,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 18px;
   }
 
   footer .social-icons p {
@@ -169,14 +183,20 @@ textarea {
     
   /*-------- Mobile Styles - Homepage ---------*/
 
+  .content-wrapper {
+    width: 88%;
+  }
+
   .hero-area {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    padding: 15px 0;
+    margin-bottom: 330px;
   }
 
   .hero-area .content-wrapper {
-
+  
   }
 
   aside {
@@ -184,6 +204,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin-bottom: 50px;
   }
 
   aside .content-wrapper {
@@ -204,8 +225,21 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .features h2 {
+    margin: 50px 0;
+  }
+
+  .features p {
+    margin: 0;
+  }
+
   .features .content-wrapper {
 
+  }
+
+  .features article {
+    width: 54%;
+    margin: 45px 0;
   }
 
   .features .features-items {
@@ -215,8 +249,8 @@ textarea {
     flex-flow: row wrap;
   }
 
-  .features-items-description {
-
+  .features .features-item-description {
+    
   }
 
   .reviews {
@@ -227,6 +261,15 @@ textarea {
 
   .reviews .content-wrapper {
 
+  }
+  
+  .reviews h2 {
+    margin: 50px 0 30px 0;
+
+  }
+  .reviews h3 {
+    width: 48%;
+    margin: 20px 0 20px 0;
   }
 
   .reviews .team-review {
@@ -243,6 +286,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 50px 0;
   }
 
   .mission .content-wrapper {
@@ -265,7 +309,7 @@ textarea {
   }
 
   .contact-section .content-wrapper {
-
+    margin: 50px 0;
   }
 
   .contact-section .general-info {
@@ -290,9 +334,11 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 50px 0;
   }
 
   .faq .faq-content {
+    margin: 20px 0;
 
   }
 
