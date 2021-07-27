@@ -742,6 +742,14 @@ textarea {
     align-items: center;
   }
 
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 46%;
+    overflow: hidden;
+    position: relative;
+  }
+
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -823,6 +831,14 @@ textarea {
    .contact-section .content-wrapper h2 {
        width: 78%;
    }
+
+   .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 37.5%;
+    overflow: hidden;
+    position: relative;
+  }
 
   /* ==========================================================================
   FAQ Page
