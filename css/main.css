@@ -87,7 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  /* General Styles */
+   /***MOBILE***/
+
+/*------------- General Styles -------------*/
 
   html {
     font-size: 16px;
@@ -158,7 +160,7 @@ textarea {
     flex-flow: row wrap;
   }
 
-  /* Header Styles */
+  /*------------- Base Header Styles -------------*/
 
   header {
     padding: 15px 0;
@@ -183,7 +185,7 @@ textarea {
 
   .header-divider {
     width: 100%;
-    margin: 10px 0;
+    margin-top: 10px;
   }
 
   header nav {
@@ -209,7 +211,7 @@ textarea {
     width: 100%;
   }
 
-  /* Footer Styles */
+  /*------------- Base Footer Styles -------------*/
 
   footer {
     display: flex;
@@ -217,7 +219,7 @@ textarea {
     background-color: #202322;
     color: #e2e3ed;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 
   footer .content-wrapper {
@@ -229,30 +231,16 @@ textarea {
     margin: 0;
   }
 
-  footer h3{
+  footer h3 {
     margin: 38px 0;
     font-weight: 500;
   }
 
-  footer .contact {
-
-  }
-
-  footer .social {
-
-  }
-
   footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 18px;
-  }
-
-  footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   footer .social-icons p {
@@ -274,7 +262,7 @@ textarea {
   }
 
     
-  /*-------- Mobile Styles - Homepage ---------*/
+  /*------------- Mobile - Homepage -------------*/
 
   .content-wrapper {
     width: 88%;
@@ -314,8 +302,11 @@ textarea {
     background-size: cover;
   }
 
+  .features .content-wrapper {
+    margin-top: 50px;
+  }
+
   .features h2 {
-    margin: 50px 0;
     line-height:normal;
     color: #e2e3ed;
     font-weight: 500;
@@ -329,7 +320,7 @@ textarea {
 
   .features article {
     width: 54%;
-    margin: 45px 0;
+    margin: 40px 0;
   }
 
   .features .features-items {
@@ -370,7 +361,7 @@ textarea {
     line-height: 18px;
   }
 
-    /*-------- Home Page - Form Styles ---------*/
+  /*Form Styles*/
 
     aside .form {
       margin-top: 30px;
@@ -389,7 +380,7 @@ textarea {
     input[type=text] {
       box-sizing: border-box;
       width: 100%;
-      color: #2a423a;
+      color: #9d9ea4;
       font-style: italic;
       padding: 1em;
     }
@@ -410,7 +401,7 @@ textarea {
 
   
 
-  /*-------- Mobile Styles - About ---------*/
+  /*------------- Mobile - About -------------*/
 
 
   .mission {
@@ -420,17 +411,14 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #527158;
-    padding: 0 0 50px 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
   }
 
   .mission h2 {
     color: #e2e3ed;
     font-weight: 500;
     line-height: normal;
-  }
-
-  .mission .content-wrapper {
-    margin: 50px 0;
   }
 
   .map figure {
@@ -455,16 +443,13 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #2a423a;
+    padding: 30px 0;
   }
 
   .contact-section h2 {
     color: #e2e3ed;
     font-weight: 500;
     line-height: normal;
-  }
-
-  .contact-section .content-wrapper {
-    margin: 50px 0;
   }
 
   .contact-content {
@@ -474,11 +459,10 @@ textarea {
   .contact-content h3 {
     line-height: normal;
     font-weight: 500;
-    padding-bottom: 10px;
   }
  
 
-  /*-------- Mobile Styles - FAQ ---------*/
+  /*------------- Mobile - FAQ -------------*/
 
   .faq {
     display: flex;
@@ -491,12 +475,12 @@ textarea {
 
   .faq h2 {
     font-weight: 500;
-    line-height: 1.875em;
+    line-height: 30px;
   }
 
   .faq h3 {
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 24px;
   }
 
   .faq .content-wrapper {
@@ -508,7 +492,7 @@ textarea {
   }
 
   .faq .faq-content {
-    margin: 20px 0;
+    margin: 10px 0;
 
   }
 
@@ -604,9 +588,9 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-/*-------- Tablet Styles ---------*/
+/*** TABLET STYLES ***/
 
-  /* General styles */
+  /*------------- General Styles -------------*/
   .content-wrapper {
     max-width: 640px;
     margin: 30px 0;
@@ -622,7 +606,36 @@ textarea {
     line-height: 1.25em;
   }
 
-  /* Header */
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 50px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: row wrap;
+  }
+  footer .social {
+    margin-top: -60px;
+  }
+
+  .social-icons p {
+    margin: 0 30px;
+  }
+
+  address p {
+    margin: 60px 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /*------------- Tablet - Homepage -------------*/
 
   header {
     justify-content: center;
@@ -669,34 +682,36 @@ textarea {
     margin: 0;
   }
 
+  aside .content-wrapper .form-description p {
+    padding-right: 10px;
+  }
+
   /* Features */
 
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
-    flex-basis: 50%;
+    flex-flow: column wrap;
+    flex-basis: 70%;
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 70%;
   }
 
   .features h2 {
     font-size: 2.25em;
   }
 
+  .features i {
+    font-size: 5em;
+  }
+
   /* Reviews */
 
   .reviews .content-wrapper {
     margin: 80px 0;
-  }
-
-  .reviews article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .reviews h2 {
@@ -714,32 +729,7 @@ textarea {
     margin: 0 10px;
   }
 
-  /* Footer */
-
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-  }
-
-
-  footer .copyright {
-    width: 100%;
-  }
-
-
-  /* ==========================================================================
-   About Page
-   ========================================================================== */
+  /*------------- Tablet - About -------------*/
 
   .mission-content {
     display: flex;
@@ -747,8 +737,8 @@ textarea {
     align-items: center;
   }
 
-  .mission-content p {
-    width: 83%;
+  .mission .content-wrapper .mission-content p {
+    flex-basis: 47%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -769,26 +759,36 @@ textarea {
     position: relative;
   }
 
-  /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+  .contact-section address {
+    margin-top: -50px;
+  }
+
+  /*------------- Tablet - FAQ -------------*/
 
    .faq .content-wrapper {
      justify-content: space-between;
    }
 
    .faq-content {
-     flex-basis: 40%;
+     flex-basis: 47%;
    }
 
    .faq h2 {
      width: 100%;
    }
 
+   .faq h3 {
+     font-size: 0.875em;
+     font-family: 'Poppins', sans-serif;
+     line-height: 18px;
+   }
+
 }
 
 @media only screen and (min-width: 1200px) {
-/*-------- Desktop Styles ---------*/
+/*** DESKTOP STYLES ***/
+
+  /*------------- General Styles -------------*/
 
   .content-wrapper {
     max-width: 960px;
@@ -802,12 +802,12 @@ textarea {
       font-size: 1.875em;
   }
 
-  p {
+  .main p {
     font-size: 1.125em;
-    line-height: 1.5em;
   }
 
-  /* Homepage */
+
+  /*------------- Desktop - Homepage -------------*/
 
   header figure {
     width: 23%;
@@ -838,14 +838,24 @@ textarea {
 
   /* Reviews */
 
+  .reviews .content-wrapper article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 90px;
+  }
+
+  .reviews h3 {
+    margin-top: -10px;
+  }
+
   .reviews article div {
-    width: 80%;
+    width: 50%;
   }
 
 
-  /* ==========================================================================
-   About Page
-   ========================================================================== */
+  /*------------- Desktop - About -------------*/
+
    .mission h2,
    .contact-section .content-wrapper h2 {
        width: 78%;
@@ -859,20 +869,15 @@ textarea {
     position: relative;
   }
 
-  /* ==========================================================================
-  FAQ Page
-  ========================================================================== */
-   .faq h2 {
+  /*------------- Desktop - Footer Styles -------------*/
+
+  .faq h2 {
        width: 100%;
    }
 
 
-
-
-
-
-
 }
+
 
 /* ==========================================================================
    Print styles.
